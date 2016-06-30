@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaa-yI-Shl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Dx0-66-TSs"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="图片设置" id="gFU-C4-wVM"/>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="0.0" y="46" width="320" height="414"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9"/>
+                        <outlet property="delegate" destination="-1" id="11"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="08m-R9-U0m"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="xaa-yI-Shl" secondAttribute="bottom" id="ENH-4L-QtQ"/>
+                <constraint firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="O49-hI-yyj"/>
+                <constraint firstItem="xaa-yI-Shl" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="atx-uD-xIZ"/>
+                <constraint firstItem="8" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="ew2-N6-y9b"/>
+                <constraint firstItem="xaa-yI-Shl" firstAttribute="top" secondItem="6" secondAttribute="top" id="kqO-3p-Ir1"/>
+                <constraint firstAttribute="trailing" secondItem="xaa-yI-Shl" secondAttribute="trailing" id="us7-CD-5Du"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="490" y="470"/>
+        </view>
+    </objects>
+</document>
